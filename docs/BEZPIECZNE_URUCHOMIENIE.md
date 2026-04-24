@@ -77,6 +77,7 @@ Wariant projektu to frontend Vite + React + Supabase Auth:
 4. Skopiuj całą zawartość i wklej do edytora SQL w Supabase.
 5. Kliknij **Run**.
 6. Sprawdź, czy zapytanie zakończyło się bez błędów.
+7. Ważne: ten skrypt celowo blokuje zmianę `profiles.role` przez zwykły update z frontendu.
 
 ---
 
@@ -166,6 +167,7 @@ Wariant projektu to frontend Vite + React + Supabase Auth:
 - [ ] Site URL i Redirect URLs są poprawne.
 - [ ] RLS jest aktywne dla tabel biznesowych.
 - [ ] Co najmniej jedna polityka RLS ogranicza dane do `auth.uid()`.
+- [ ] `profiles.role` nie może być zmienione przez użytkownika z frontendu (blokada triggerem).
 - [ ] Konto testowe przechodzi pełny flow: register → verify email → login → logout → reset password.
 
 ---
